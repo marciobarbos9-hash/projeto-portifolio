@@ -153,6 +153,15 @@ color: var(--destaque);
   border-radius: 4px;
 }
 
+#formaçao-container{
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+   
+}
+#formaçao-container.curso{
+border: 5px solid red;
+}
 
 @media screen and (min-width:768px){
   .skill-container{
