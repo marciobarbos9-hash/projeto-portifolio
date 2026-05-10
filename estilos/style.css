@@ -99,3 +99,27 @@ margin-bottom: 15px;
 
   color: var(--destaque-inverso);
 }
+#detalhes{
+  grid-column: 2;
+}
+article{
+  background-color: var(--fundo-card);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+article#video.video-container{
+  position: relative;
+  width:100% ;
+  margin: auto;
+  aspect-ratio: 16/9;
+}
+.video-container iframe{
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+article h2{
+  color:var(--destaque) ;
+  margin-bottom: 10px;
+}
