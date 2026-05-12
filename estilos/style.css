@@ -20,6 +20,15 @@
   --destaque-inverso:#66bbff;
   --fundo-card:#ffff;
 }
+body.escuro{
+  --fundo-principal:#222222;
+  --texto:#e0e0e0;
+  --texto-inverso:#333333;
+  --destaque:#ff5522;
+  --destaque-inverso:#a73917;
+  --fundo-card:#444444;
+}
+
 body{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.5em;
@@ -121,6 +130,8 @@ article#video.video-container{
   margin: auto;
   display: block;
   padding: 20px;
+  width: auto;
+  border-radius: 30px;
 }
 article h2{
   color:var(--destaque) ;
@@ -228,7 +239,23 @@ footer a:hover{
   color: var(--destaque-inverso);
 
 }
-@media screen and (min-width:762px){
+@media screen and (min-width:768px){
+main{
+
+grid-template-columns: auto 300px 1fr auto;
+}
+section#ficha{
+grid-column: 2/3;
+height: fit-content;
+position: sticky;
+top: 65px;
+}
+section#detalhes{
+grid-column: 3/4;
+}
+
+
+
   .skill-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
